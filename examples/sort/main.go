@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+
 	intSlice := []uint32{5, 3, 1, 4, 2}
 
 	ascendingSorted := SortSlice(intSlice, true)
@@ -14,6 +15,7 @@ func main() {
 
 	descendingSorted := SortSlice(intSlice, false)
 	fmt.Println("Descending Sort:", descendingSorted)
+
 }
 
 func SortSlice[T interfaces.Numeric](slice []T, ascending bool) []T {
